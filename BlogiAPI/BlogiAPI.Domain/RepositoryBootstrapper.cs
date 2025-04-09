@@ -8,6 +8,10 @@ namespace BlogiAPI.Domain
         private static void RegisterRepositories(this IServiceCollection services)
         {
             
+            services.AddScoped<ICarouselBannerRepository, CarouselBannerRepository>();
+            services.AddScoped<IBannerAdRepository, BannerAdRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IUserRepository, UserRepository>(); 
           
