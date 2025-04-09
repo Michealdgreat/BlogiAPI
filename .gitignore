@@ -398,3 +398,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/BlogiAPI/BlogiAPI/appsettings.json
+/BlogiAPI/BlogiAPI.AppHost/appsettings.json

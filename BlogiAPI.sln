@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogiAPI.Chain", "BlogiAPI\BlogiAPI.Chain\BlogiAPI.Chain.csproj", "{3A31867F-3851-4120-A1F0-FEF4DE7E7BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogiAPI.Client", "BlogiAPI\BlogiAPI.Client\BlogiAPI.Client.csproj", "{24728D2F-CB21-4AEB-AEC1-B4A07DE94BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogiAPI.Domain", "BlogiAPI\BlogiAPI.Domain\BlogiAPI.Domain.csproj", "{D1F52DDC-8F43-4C3A-AFFE-E7582C8B1F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogiAPI", "BlogiAPI\BlogiAPI\BlogiAPI.csproj", "{F37BC23A-1DB5-443D-9571-62541B56AF51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogiAPI.AppHost", "BlogiAPI\BlogiAPI.AppHost\BlogiAPI.AppHost.csproj", "{CD7DF2DF-3A2F-45BD-86E2-CDEAFEF8C21B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogiAPI.ServiceDefaults", "BlogiAPI\BlogiAPI.ServiceDefaults\BlogiAPI.ServiceDefaults.csproj", "{3891DCE0-48E6-4D5E-AB5E-E31E8750F4B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A31867F-3851-4120-A1F0-FEF4DE7E7BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A31867F-3851-4120-A1F0-FEF4DE7E7BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A31867F-3851-4120-A1F0-FEF4DE7E7BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A31867F-3851-4120-A1F0-FEF4DE7E7BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24728D2F-CB21-4AEB-AEC1-B4A07DE94BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24728D2F-CB21-4AEB-AEC1-B4A07DE94BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24728D2F-CB21-4AEB-AEC1-B4A07DE94BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24728D2F-CB21-4AEB-AEC1-B4A07DE94BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F52DDC-8F43-4C3A-AFFE-E7582C8B1F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F52DDC-8F43-4C3A-AFFE-E7582C8B1F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F52DDC-8F43-4C3A-AFFE-E7582C8B1F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F52DDC-8F43-4C3A-AFFE-E7582C8B1F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F37BC23A-1DB5-443D-9571-62541B56AF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37BC23A-1DB5-443D-9571-62541B56AF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F37BC23A-1DB5-443D-9571-62541B56AF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F37BC23A-1DB5-443D-9571-62541B56AF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7DF2DF-3A2F-45BD-86E2-CDEAFEF8C21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7DF2DF-3A2F-45BD-86E2-CDEAFEF8C21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7DF2DF-3A2F-45BD-86E2-CDEAFEF8C21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7DF2DF-3A2F-45BD-86E2-CDEAFEF8C21B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3891DCE0-48E6-4D5E-AB5E-E31E8750F4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3891DCE0-48E6-4D5E-AB5E-E31E8750F4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3891DCE0-48E6-4D5E-AB5E-E31E8750F4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3891DCE0-48E6-4D5E-AB5E-E31E8750F4B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A31867F-3851-4120-A1F0-FEF4DE7E7BE6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{24728D2F-CB21-4AEB-AEC1-B4A07DE94BE7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D1F52DDC-8F43-4C3A-AFFE-E7582C8B1F59} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4636FF3C-1FA2-498E-9EEF-71EFFD8D8F30}
+	EndGlobalSection
+EndGlobal
