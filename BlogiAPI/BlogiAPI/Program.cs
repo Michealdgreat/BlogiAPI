@@ -21,6 +21,18 @@ namespace BlogiAPI
                 serverOptions.ListenAnyIP(5000); 
             });*/
             
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowReactApp", builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
+         
+            
             builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
             var connectionString = builder.Configuration["ConnectionStrings:DefaultConnection"] ?? throw new NullReferenceException("ConnectionString is null");
@@ -119,6 +131,10 @@ namespace BlogiAPI
             }
 
             // Configure the HTTP request pipeline
+            
+            app.UseCors("AllowReactApp");
+            
+            
             app.UseHttpsRedirection();
             app.UseAuthentication(); 
             app.UseAuthorization();
