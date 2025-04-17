@@ -6,11 +6,12 @@ using BlogiAPI.Domain.Commands.BannerAd;
 
 namespace BlogiAPI.Controllers
 {
-    [Authorize]
+
     public class BannerAdController(BannerAdOrchestrator bannerAdOrchestrator) : ApiControllerBase
     {
         private readonly BannerAdOrchestrator _bannerAdOrchestrator = bannerAdOrchestrator;
 
+        [Authorize]
         [HttpPost("CreateBannerAd")]
         public async Task<IActionResult> CreateBannerAd(CreateBannerAdCommand command)
         {
@@ -21,6 +22,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpPut("UpdateBannerAd")]
         public async Task<IActionResult> UpdateBannerAd(UpdateBannerAdCommand command)
         {
@@ -31,6 +33,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpDelete("DeleteBannerAd")]
         public async Task<IActionResult> DeleteBannerAd(DeleteBannerAdCommand command)
         {

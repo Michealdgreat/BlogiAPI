@@ -7,11 +7,12 @@ using BlogiAPI.Domain.DTOs;
 
 namespace BlogiAPI.Controllers
 {
-    [Authorize]
+ 
     public class CategoryController(CategoryOrchestrator categoryOrchestrator) : ApiControllerBase
     {
         private readonly CategoryOrchestrator _categoryOrchestrator = categoryOrchestrator;
 
+        [Authorize]
         [HttpPost("CreateCategory")]
         public async Task<IActionResult> CreateCategory(CreateCategoryCommand command)
         {
@@ -22,6 +23,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpPut("UpdateCategory")]
         public async Task<IActionResult> UpdateCategory(UpdateCategoryCommand command)
         {
@@ -32,6 +34,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpDelete("DeleteCategory")]
         public async Task<IActionResult> DeleteCategory(DeleteCategoryCommand command)
         {

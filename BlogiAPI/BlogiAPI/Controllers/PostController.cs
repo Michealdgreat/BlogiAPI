@@ -6,11 +6,12 @@ using BlogiAPI.Domain.Commands.Post;
 
 namespace BlogiAPI.Controllers
 {
-    [Authorize]
+    
     public class PostController(PostOrchestrator postOrchestrator) : ApiControllerBase
     {
         private readonly PostOrchestrator _postOrchestrator = postOrchestrator;
 
+        [Authorize]
         [HttpPost("CreatePost")]
         public async Task<IActionResult> CreatePost(CreatePostCommand command)
         {
@@ -21,6 +22,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpPut("UpdatePost")]
         public async Task<IActionResult> UpdatePost(UpdatePostCommand command)
         {
@@ -31,6 +33,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpDelete("DeletePost")]
         public async Task<IActionResult> DeletePost(DeletePostCommand command)
         {

@@ -6,11 +6,12 @@ using BlogiAPI.Domain.Commands.CarouselBanner;
 
 namespace BlogiAPI.Controllers
 {
-    [Authorize]
+ 
     public class CarouselBannerController(CarouselBannerOrchestrator carouselBannerOrchestrator) : ApiControllerBase
     {
         private readonly CarouselBannerOrchestrator _carouselBannerOrchestrator = carouselBannerOrchestrator;
 
+        [Authorize]
         [HttpPost("CreateCarouselBanner")]
         public async Task<IActionResult> CreateCarouselBanner(CreateCarouselBannerCommand command)
         {
@@ -21,6 +22,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpPut("UpdateCarouselBanner")]
         public async Task<IActionResult> UpdateCarouselBanner(UpdateCarouselBannerCommand command)
         {
@@ -31,6 +33,7 @@ namespace BlogiAPI.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpDelete("DeleteCarouselBanner")]
         public async Task<IActionResult> DeleteCarouselBanner(DeleteCarouselBannerCommand command)
         {
